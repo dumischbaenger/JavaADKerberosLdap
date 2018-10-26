@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+mainClassName = "de.dumischbaenger.JavaKerberos"
+applicationDefaultJvmArgs = []
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile "org.slf4j:slf4j-simple:1.7.25"
+  compile 'com.microsoft.sqlserver:mssql-jdbc:6.1.0.jre8'
+}
+
+task runJavaKerberos {
+  doFirst{
+    mainClassName = "de.dumischbaenger.JavaKerberos"
+    run.args=[
+      //'-dbhost',      'celsius',
+    ]
+  }
+
+  group 'bet'
+  finalizedBy run
+}
+
+task runOsKerberos {
+  doFirst{
+    mainClassName = "de.dumischbaenger.OSKerberos"
+    run.args=[
+      //'-dbhost',      'celsius',
+    ]
+  }
+  group 'bet'
+  finalizedBy run
+}
