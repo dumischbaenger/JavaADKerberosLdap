@@ -45,7 +45,9 @@ public class JavaADKerberosLdap {
 
     String props[] = { "javax.security.auth.useSubjectCredsOnly", "java.security.krb5.realm", "java.security.krb5.kdc",
         "auth.login.defaultCallbackHandler", "login.configuration.provider", "java.security.auth.login.config",
-        "login.config.url.1", "login.config.url.2", "login.config.url.3", };
+        "login.config.url.1", "login.config.url.2", "login.config.url.3",
+        "username", "ldapURL", "ldapBindDn", "ldapSearchBase", "ldapFilter", "ldapReturnAttr",
+    };
 
     for (int i = 0; i < props.length; i++) {
       LOG.info(props[i] + ": " + System.getProperty(props[i]));
