@@ -1,5 +1,6 @@
 # JavaADKerberosLdap
 
+<<<<<<< HEAD
 This sample application authenticates against AD Kerberos and querries the LDAP directory.
 
 JavaKerberosAuthenticationMSSQL is a sample app that demonstrates how to connect to an MSSQL Server with Kerberos authentication with Java.
@@ -42,3 +43,6 @@ If the authentication is successful a `LdapAction` instance is created and launc
 ## Query AD directory server (LDAP)
 
 The `LdapAction` object `run()` method connects to the directory server via JNDI API starts a query and displays the result. 
+=======
+This sample application authenticates against AD Kerberos and querries the AD LDAP directory.
+>>>>>>> 9055fab49543ddec4cd546349a9786d393d1712f
