@@ -38,5 +38,5 @@ If the authentication is successful a `LdapAction` instance is created and launc
 
 ## Query AD directory server (LDAP)
 
-The `LdapAction` object `run()` method connects to the directory server via JNDI API starts a query and displays the result. 
+The `LdapAction` objects `run()` method connects to the directory server via JNDI API, starts a query and displays the result. 
 
